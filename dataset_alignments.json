@@ -1,0 +1,30 @@
+[
+    {
+        "audio": "ljs.original/ljs.original.tar",
+        "text": "text_transcripts/ljs.original.txt"
+    },
+    {
+        "audio": "ljs_expresso_ljs.1500.cds/ljs.cds.librispeech.100.tar",
+        "text": "text_transcripts/train-clean-100.txt"
+    },
+    {
+        "audio": "ljs_expresso_ljs.1500.neutral/ljs.neutral.librispeech.100.tar",
+        "text": "text_transcripts/train-clean-100.txt"
+    },
+    {
+        "audio": "ljs_expresso_ljs.1500.cds/ljs.cds.childes.100.tar",
+        "text": "text_transcripts/childes_100.txt.tts"
+    },
+    {
+        "audio": "ljs_expresso_ljs.1500.neutral/ljs.neutral.childes.100.tar",
+        "text": "text_transcripts/childes_100.txt.tts"
+    },
+    {
+        "audio": "ljs_expresso_ljs.1500.cds/ljs.cds.giles.100.tar",
+        "text": "text_transcripts/giles.100.txt.tts"
+    },
+    {
+        "audio": "ljs_expresso_ljs.1500.neutral/ljs.neutral.giles.100.tar",
+        "text": "text_transcripts/giles.100.txt.tts"
+    }
+]

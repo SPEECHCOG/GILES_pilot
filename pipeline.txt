@@ -1,0 +1,23 @@
+0*. TAR speech data directories and remove them, if necessary.
+tar -cf ljs.read.childes.100.tar -C ljs.read.childes.100 .
+rm -rf ljs.read.childes.100
+
+conda activate whisperx
+
+1. Align speech and text transcripts using MFA
+run_mfa_alignment.py
+
+2. Calculate file durations
+calculate_durations.py
+
+3. Calculate f0
+calculate_f0.py
+
+4. Calculate formants
+calculate_formants.py
+
+5. Calculate WER (require MFA alignment)
+calculate_wer.py
+
+6. Caclculate and compare prosodic features
+prosodic_analysis.py

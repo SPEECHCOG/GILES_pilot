@@ -1,0 +1,6 @@
+[
+  ["ljs.original"],
+  ["ljs.cds.childes.100", "ljs.neutral.childes.100"],
+  ["ljs.cds.giles.100", "ljs.neutral.giles.100"],
+  ["ljs.cds.librispeech.100", "ljs.neutral.librispeech.100"]
+]
