@@ -294,7 +294,7 @@ class Point(Interval):
 
 
 class _Tier:
-    def __init__(self, start_time: float = 0.0, end_time: float = 0.0, name: str = ''):
+    def __init__(self, name: str = '', start_time: float = 0.0, end_time: float = 0.0):
         if start_time < 0:
             raise ValueError(f'The time position cannot be less than 0: {start_time}')
         if end_time < 0:
@@ -429,8 +429,8 @@ class PointTier(_Tier):
     >>> foo.write_seg(file_path, samplerate=22050)
     >>> foo.write_seg(file_path, samplerate=22050, byterate=2)
     """
-    def __init__(self, start_time: float = 0.0, end_time: float = 0.0, name: str = ''):
-        super(PointTier, self).__init__(start_time, end_time, name)
+    def __init__(self, name: str = '', start_time: float = 0.0, end_time: float = 0.0):
+        super(PointTier, self).__init__(name, start_time, end_time)
 
     def __str__(self):
         name = self.name if self.name else None
@@ -627,8 +627,8 @@ class IntervalTier(_Tier):
     >>> foo.write_seg(file_path, samplerate=22050)
     >>> foo.write_seg(file_path, samplerate=22050, byterate=2)
     """
-    def __init__(self, start_time: float = 0.0, end_time: float = 0.0, name: str = ''):
-        super(IntervalTier, self).__init__(start_time, end_time, name)
+    def __init__(self, name: str = '', start_time: float = 0.0, end_time: float = 0.0):
+        super(IntervalTier, self).__init__(name, start_time, end_time)
 
     def __str__(self):
         name = self.name if self.name else None
@@ -780,8 +780,8 @@ class TextGrid(_Tier):
     >>> foo.write(file_path)
     >>> foo.write(file_path, encoding='utf-8')
     """
-    def __init__(self, start_time: float = 0.0, end_time: float = 0.0, name: str = ''):
-        super(TextGrid, self).__init__(start_time, end_time, name)
+    def __init__(self, name: str = '', start_time: float = 0.0, end_time: float = 0.0):
+        super(TextGrid, self).__init__(name, start_time, end_time)
 
     def __str__(self):
         return f'<TextGrid {self.name}, {len(self)} Tiers>'
