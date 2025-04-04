@@ -1,1 +1,198 @@
-<h1>Audio Samples from "A Pipeline for Stochastic and Controlled Generation of Realistic Language Input for Simulating Infant Language Acquisition"</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Samples from GILES</title>
+    <style>
+        div {
+        margin-bottom: 32px;
+        }
+
+        .github.td {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        #toc_container {
+        background: #f9f9f9 none repeat scroll 0 0;
+        border: 1px solid #aaa;
+        display: table;
+        font-size: 95%;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 8px;
+        width: auto;
+        }
+
+        #toc_container ul  {
+          list-style: outside none none !important; margin-left: -40px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+<article>
+    <header>
+        <h1>Audio Samples from "A Pipeline for Stochastic and Controlled Generation of Realistic Language Input for
+            Simulating Infant Language Acquisition"</h1>
+    </header>
+</article>
+
+<div style="margin-bottom: 16px;" class="github">
+    <table>
+        <tbody>
+        <tr>
+            <!-- <td><a href="https://arxiv.org/abs/2205.15439">[arXiv]</a></td> -->
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div>
+    <div>
+        <p> The page contains a set of audio samples in support of the paper "A Pipeline for Stochastic and Controlled Generation of Realistic Language Input for
+            Simulating Infant Language Acquisition".
+        </p>
+        <p> One can listen to speech samples produced for our experiments presented in the paper.
+            The samples were produced by FastPitch model trained jointly using LJSpeech and Expresso datasets (see the detailed description in the paper).
+			There are samples with both speaking styles, i.e. child-directed (CDS) and neutral, and both types of text content, i.e. books (from LibriSpeech) and synthetic CDS transcripts.
+			Note, that due to limited training data for this style, some samples with CDS styles suffered from specific issue resulting in unjustified pauses.
+		</p>
+    </div>
+</div>
+<div>
+    <a name="lj"><h2>1. Synthetic content</h2></a>
+    <hr>
+    <p></p>
+
+	<a name="lj"><h3>1.1. Good quality samples (UTMOS > 4.0)</h3></a>
+    <p><b>Text: </b><i>Yes. You do. What is this up here.</i></p>
+    <table>
+        <tbody>
+        <tr>
+            <th>CDS style. Expresso speaker (exp2)</th>
+            <th>Neutral style. LJSpeech speaker</th>
+        </tr>
+        <tr>
+            <td>
+                <audio controls preload="none">
+                    <source src="audio_samples/cds.giles.1.mp3">
+                </audio>
+            </td>
+            <td>
+                <audio controls preload="none">
+                    <source src="audio_samples/ljs.giles.1.mp3">
+                </audio>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p><b>Text: </b><i>Ok ok. We'll change this one later.</i></p>
+    <table>
+        <tbody>
+        <tr>
+            <th>CDS style. Expresso speaker (exp2)</th>
+            <th>Neutral style. LJSpeech speaker</th>
+        </tr>
+        <tr>
+            <td>
+                <audio controls preload="none">
+                    <source src="audio_samples/cds.giles.2.mp3">
+                </audio>
+            </td>
+            <td>
+                <audio controls preload="none">
+                    <source src="audio_samples/ljs.giles.2.mp3">
+                </audio>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p><b>Text: </b><i>And they're talking about your birthday party.</i></p>
+    <table>
+        <tbody>
+        <tr>
+            <th>CDS style. Expresso speaker (exp2)</th>
+            <th>Neutral style. LJSpeech speaker</th>
+        </tr>
+        <tr>
+            <td>
+                <audio controls preload="none">
+                    <source src="audio_samples/cds.giles.3.mp3">
+                </audio>
+            </td>
+            <td>
+                <audio controls preload="none">
+                    <source src="audio_samples/ljs.giles.3.mp3">
+                </audio>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+	<a name="lj"><h3>1.2. Samples, suffering from specific issues</h3></a>
+    <p><b>Text: </b><i>So many times. You want mommy to hold that on.</i></p>
+    <p>The CDS styled sample has specific problem that some words of the text input were not pronounced. <i>So many time... You want mommy to hold that ...</i></p>
+    <table>
+        <tbody>
+        <tr>
+            <th>CDS style. Expresso speaker (exp2)</th>
+            <th>Neutral style. LJSpeech speaker</th>
+        </tr>
+        <tr>
+            <td>
+                <audio controls preload="none">
+                    <source src="audio_samples/cds.giles.lq.mp3">
+                </audio>
+            </td>
+            <td>
+                <audio controls preload="none">
+                    <source src="audio_samples/ljs.giles.lq.mp3">
+                </audio>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div>
+    <a name="lj"><h2>2. LibriSpeech content</h2></a>
+    <hr>
+    <p></p>
+
+    <p><b>Text: </b><i>Seemed to be common between impeached members and the parliament.</i></p>
+    <table>
+        <tbody>
+        <tr>
+            <th>CDS style. Expresso speaker (exp2)</th>
+            <th>Neutral style. LJSpeech speaker</th>
+        </tr>
+        <tr>
+            <td>
+                <audio controls preload="none">
+                    <source src="audio_samples/cds.librispeech.1.mp3">
+                </audio>
+            </td>
+            <td>
+                <audio controls preload="none">
+                    <source src="audio_samples/ljs.librispeech.1.mp3">
+                </audio>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+
+
+</html>
