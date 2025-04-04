@@ -5,7 +5,7 @@ Program code for:
 - Linguistic analysis of the generated and original transcripts.
 - Prosodic analysis and comparison of the generated speech datasets.
 - Visualization of the language learning simulation.
-- [Some speech samples used in the experiments can be found here](./docs/index.html)
+- [Some speech samples used in the experiments can be found here](https://speechcog.github.io/GILES_pilot/)
 
 ### 1. Contents:
 1.1. Text generation and analysis: collecting training data, model training, data generation, data analysis
