@@ -79,7 +79,7 @@ def calc_synt_tree_height(data: list[list[Sentence]]) -> Union[list[float], list
         text_values = []
         for sentence in text:
             distances = [_get_dist_to_root(w, sentence) for w in sentence.words]
-            text_values.append(max(distances))
+            text_values.append(max(distances) + 1)
         feature_measures.append(np.mean(text_values))
     return feature_measures
 
